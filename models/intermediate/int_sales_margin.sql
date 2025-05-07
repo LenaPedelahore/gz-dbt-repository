@@ -1,9 +1,9 @@
-SELECT products_id,
-      date_date,
-      orders_id,
-      revenue,
-      quantity,
-      purchase_price,
+SELECT sales.products_id,
+      sales.date_date,
+      sales.orders_id,
+      sales.revenue,
+      sales.quantity,
+      product.purchase_price,
    -- Calcul du coût d'achat
 sales.quantity * product.purchase_price AS purchase_cost,
 
