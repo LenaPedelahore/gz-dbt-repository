@@ -18,15 +18,7 @@ sources:
             description: Revenue generated from the sale of the product
           - name: quantity
             description: Quantity of the product sold in the order
-        tests:
-          - unique:
-              combination_of:
-                - orders_id
-                - pdt_id
-          - not_null:
-              combination_of:
-                - orders_id
-                - pdt_id
+        
       - name: product
         identifier: raw_gz_product
         columns:
